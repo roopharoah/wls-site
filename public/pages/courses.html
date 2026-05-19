@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Wickman's Language School</title>
+  <meta name="description" content="German language courses A1-C1. Intensive 12-week programs aligned to Goethe exam preparation.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .courses-page { min-height: 100vh; background: var(--mist); padding: 100px 20px 60px; }
+    .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
+    .course-card { background: var(--white); border-radius: 8px; padding: 30px; box-shadow: var(--shadow); transition: all 0.3s ease; }
+    .course-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    .course-level { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--gold); margin-bottom: 10px; }
+    .course-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--midnight-blue); margin-bottom: 15px; }
+    .course-desc { color: var(--text-light); line-height: 1.8; margin-bottom: 20px; }
+    .course-features { list-style: none; margin-bottom: 20px; }
+    .course-features li { padding: 8px 0; padding-left: 25px; position: relative; color: var(--text-light); }
+    .course-features li:before { content: "✓"; position: absolute; left: 0; color: var(--gold); font-weight: bold; }
+    .table-wrapper { overflow-x: auto; margin: 40px 0; }
+    .level-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 8px; box-shadow: var(--shadow); }
+    .level-table th { background: var(--midnight-blue); color: var(--white); padding: 15px; text-align: left; font-weight: 700; }
+    .level-table td { padding: 15px; border-bottom: 1px solid var(--border-light); }
+    .level-table tr:hover { background: var(--mist); }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <svg class="wls-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="50" y="60" font-family="Playfair Display" font-size="32" font-weight="bold" text-anchor="middle" fill="currentColor">WLS</text>
+        </svg>
+        <span>WLS</span>
+      </div>
+      
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/#why-german" class="nav-link">Why German?</a></li>
+        <li><a href="/courses" class="nav-link active">Courses</a></li>
+        <li><a href="/#exam-dates" class="nav-link">Exam Dates</a></li>
+        <li><a href="/enroll" class="nav-link">Enroll</a></li>
+        <li><a href="/blog" class="nav-link">Blog</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <a href="/enroll" class="cta-button">Enroll Now</a>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Courses Section -->
+  <div class="courses-page">
+    <div class="container">
+      <h1 class="section-title" style="margin-bottom: 40px;">German Language Courses</h1>
+      <p style="text-align: center; color: var(--text-light); font-size: 18px; max-width: 700px; margin: 0 auto 60px;">
+        All courses are intensive, 12-week programs aligned to official Goethe-Institut exam preparation. Classes are small (max 8 students) for personalized feedback and rapid progression.
+      </p>
+
+      <div class="course-grid">
+        <div class="course-card fade-in-up">
+          <div class="course-level">A1</div>
+          <h3 class="course-title">Absolute Beginner</h3>
+          <p class="course-desc">Perfect if you've never studied German before. Learn survival phrases, basic grammar, and everyday vocabulary.</p>
+          <ul class="course-features">
+            <li>Alphabet & pronunciation</li>
+            <li>Simple greetings & introductions</li>
+            <li>Present tense fundamentals</li>
+            <li>Elementary written tasks</li>
+          </ul>
+          <a href="/enroll" class="cta-button">Enroll</a>
+        </div>
+
+        <div class="course-card fade-in-up delay-1">
+          <div class="course-level">A2</div>
+          <h3 class="course-title">Elementary</h3>
+          <p class="course-desc">Build on basic skills. Handle familiar topics, past tense, and simple conversations about daily life.</p>
+          <ul class="course-features">
+            <li>Past & present tenses</li>
+            <li>Narrative skills</li>
+            <li>Restaurant, shopping, hotel German</li>
+            <li>Email & short text writing</li>
+          </ul>
+          <a href="/enroll" class="cta-button">Enroll</a>
+        </div>
+
+        <div class="course-card fade-in-up delay-2">
+          <div class="course-level">B1</div>
+          <h3 class="course-title">Intermediate</h3>
+          <p class="course-desc">Speak with more fluency. Discuss ideas, past experiences, and handle more complex social situations.</p>
+          <ul class="course-features">
+            <li>Complex tenses & modes</li>
+            <li>Opinion & argument skills</li>
+            <li>Professional communication</li>
+            <li>Formal letter writing</li>
+          </ul>
+          <a href="/enroll" class="cta-button">Enroll</a>
+        </div>
+
+        <div class="course-card fade-in-up delay-1">
+          <div class="course-level">B2</div>
+          <h3 class="course-title">Upper Intermediate</h3>
+          <p class="course-desc">Advanced fluency. Discuss abstract ideas, literature, current events. Qualify for German universities.</p>
+          <ul class="course-features">
+            <li>University readiness</li>
+            <li>Abstract language</li>
+            <li>Media comprehension</li>
+            <li>Academic writing</li>
+          </ul>
+          <a href="/enroll" class="cta-button">Enroll</a>
+        </div>
+
+        <div class="course-card fade-in-up delay-2">
+          <div class="course-level">C1</div>
+          <h3 class="course-title">Advanced</h3>
+          <p class="course-desc">Near-native proficiency. Master idioms, nuance, and sophisticated written & spoken German.</p>
+          <ul class="course-features">
+            <li>Cultural sophistication</li>
+            <li>Literary analysis</li>
+            <li>Professional mastery</li>
+            <li>Career advancement</li>
+          </ul>
+          <a href="/enroll" class="cta-button">Enroll</a>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 80px; margin-bottom: 30px;">Course Structure & Progression</h2>
+      
+      <div class="table-wrapper">
+        <table class="level-table">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Duration</th>
+              <th>Weekly Hours</th>
+              <th>Certification</th>
+              <th>Next Step</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A1</strong></td>
+              <td>12 weeks</td>
+              <td>20-25 hours</td>
+              <td>Goethe A1</td>
+              <td>→ A2</td>
+            </tr>
+            <tr>
+              <td><strong>A2</strong></td>
+              <td>12 weeks</td>
+              <td>20-25 hours</td>
+              <td>Goethe A2</td>
+              <td>→ B1</td>
+            </tr>
+            <tr>
+              <td><strong>B1</strong></td>
+              <td>12 weeks</td>
+              <td>20-25 hours</td>
+              <td>Goethe B1</td>
+              <td>→ B2 or Career</td>
+            </tr>
+            <tr>
+              <td><strong>B2</strong></td>
+              <td>12 weeks</td>
+              <td>20-25 hours</td>
+              <td>Goethe B2</td>
+              <td>German Universities</td>
+            </tr>
+            <tr>
+              <td><strong>C1</strong></td>
+              <td>12 weeks</td>
+              <td>20-25 hours</td>
+              <td>Goethe C1</td>
+              <td>Master's Programs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background: var(--white); padding: 40px; border-radius: 8px; border-left: 4px solid var(--gold); margin-top: 40px;">
+        <h3 style="color: var(--midnight-blue); margin-bottom: 15px;">Course Format</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--gold); font-weight: bold;">✓</span>
+            <strong>Class Size:</strong> Maximum 8 students for personalized feedback
+          </li>
+          <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--gold); font-weight: bold;">✓</span>
+            <strong>Schedule:</strong> 3–4 sessions per week, morning/evening options
+          </li>
+          <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--gold); font-weight: bold;">✓</span>
+            <strong>Format:</strong> Interactive, conversation-focused with grammar scaffolding
+          </li>
+          <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--gold); font-weight: bold;">✓</span>
+            <strong>Materials:</strong> Official Goethe course books + WLS supplementary resources
+          </li>
+          <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--gold); font-weight: bold;">✓</span>
+            <strong>Exam Prep:</strong> Mock exams every 2 weeks with detailed feedback
+          </li>
+        </ul>
+      </div>
+
+      <div style="text-align: center; margin-top: 60px;">
+        <h3 style="color: var(--midnight-blue); margin-bottom: 15px;">Ready to Begin?</h3>
+        <p style="color: var(--text-light); margin-bottom: 30px;">Enrollment opens June 10th every year. Secure your place in the next cohort.</p>
+        <a href="/enroll" class="cta-button large">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <svg class="wls-logo-footer" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="50" y="60" font-family="Playfair Display" font-size="32" font-weight="bold" text-anchor="middle" fill="currentColor">WLS</text>
+        </svg>
+        <p class="footer-mission">Opening Borders, One Word at a Time.</p>
+        <div class="social-links">
+          <a href="https://wa.me/qr/UTCOXJZLFRMQO1" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/#exam-dates">Exam Dates</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><strong>Location:</strong><br>Victoria Falls, Zimbabwe</li>
+          <li><strong>Email:</strong><br><a href="mailto:info@wickmanslanguageschool.com">info@wickmanslanguageschool.com</a></li>
+          <li><strong>WhatsApp:</strong><br><a href="https://wa.me/qr/UTCOXJZLFRMQO1">Chat with us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.goetheharare.org/exam/" target="_blank">Goethe Exam Schedule</a></li>
+          <li><a href="https://www.goetheharare.org/" target="_blank">Goethe-Zentrum Harare</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wickman's Language School · Victoria Falls, Zimbabwe · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/qr/UTCOXJZLFRMQO1" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
